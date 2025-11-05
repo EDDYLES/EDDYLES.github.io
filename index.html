@@ -3,15 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-         <title>Page avec fond de couleur</title>
+    <title>Tableau aligné à gauche</title>
     <style>
-        body {
-            background-color: #a3cae4; /* Choisis la couleur de ton choix */
+        table {
+            width: 60%;
+            border-collapse: collapse; /* Supprime l'espace entre les bordures */
+            margin-left: 0;  /* Aligne le tableau à gauche */
+            margin-right: auto; /* Évite les marges à droite */
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
         }
     </style>
-  </head>
+</head>
  <body>
-    <h1>Bienvenue sur ma page</h1>
+    <h1>Ressources Informatiques</h1>
     <img src="images/Tbord.png" alt="parfait" />
 <img src="images/PROC_VISUALISATION_FICHIERS.pdf" alt="VISUALISATION DE FICHIERS DANS EXPLORATEUR WINDOWS" />
 <a href="images/PROC_VISUALISATION_FICHIERS.pdf" target="_blank">Télécharger le fichier PDF</a>
@@ -20,27 +41,23 @@
     <table border="1">
         <!-- Ligne d'en-têtes -->
         <tr>
-            <th>Nom</th>
-            <th>Âge</th>
-            <th>Ville</th>
+            <th>Date</th>
+            <th>Incident</th>
+            <th>Fichier</th>
         </tr>
         <!-- Première ligne de données -->
         <tr>
-            <td>Jean</td>
-            <td>25</td>
-            <td>Paris</td>
+            <td>05 novembre 2025</td>
+            <td>Problème de visualisation des fichiers dans windows</td>
+            <td><img src="images/PROC_VISUALISATION_FICHIERS.pdf" alt="VISUALISATION DE FICHIERS DANS EXPLORATEUR WINDOWS" /></td>
         </tr>
         <!-- Deuxième ligne de données -->
         <tr>
-            <td>Marie</td>
-            <td>30</td>
-            <td>Lyon</td>
+         
         </tr>
         <!-- Troisième ligne de données -->
         <tr>
-            <td>Luc</td>
-            <td>35</td>
-            <td>Marseille</td>
+            
         </tr>
     </table>
     
